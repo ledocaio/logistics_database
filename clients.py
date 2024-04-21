@@ -19,7 +19,7 @@ def generate_fake_clients(num_clients):
     clients = []
     for _ in range(num_clients):
         company_code = generate_client_code()
-        company_name = (fake.company() +' '+  fake.company_suffix())
+        company_name = fake.company()
         name = fake.name()
         address = fake.street_address()
         city = fake.city()
